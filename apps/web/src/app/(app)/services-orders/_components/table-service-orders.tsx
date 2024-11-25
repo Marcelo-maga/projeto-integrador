@@ -68,9 +68,9 @@ export default function TableServiceOrders() {
           orders.map((item: any) => {
             const serviceOrderQuote = {
               id: item.id,
-              clientName: "Teste Nome",
+              clientName: item.client_name,
               cpfCnpj: item.client_cpf_cnpj,
-              email: "teste@gmail.com",
+              email: item.client_email,
               labor_value: item.labor_value,
               material_value: item.material_value,
               whole_value:
